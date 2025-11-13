@@ -3,11 +3,12 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
 import ProductPreview from './pages/product-preview'
+import './main.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>welcome</div>
+    element: <h1 className="text-center text-gray-400">welcome</h1>
   },
   {
     path: '/product-preview',
@@ -17,6 +18,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </StrictMode>
 )
