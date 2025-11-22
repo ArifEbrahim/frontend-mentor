@@ -8,10 +8,10 @@ export default function QRCode() {
           <img src={qrCode} alt="QR code linking to Frontend Mentor" />
         </div>
         <div className="p-4">
-          <h1 className="mb-4 text-center font-display text-lg leading-tight font-bold text-[hsl(218,44%,22%)]">
+          <h1 className="mb-4 text-center font-outfit text-lg leading-tight font-bold text-[hsl(218,44%,22%)]">
             Improve your front-end skills by building projects
           </h1>
-          <p className="text-center font-display text-sm leading-tight font-normal text-[hsl(216,15%,48%)]">
+          <p className="text-center font-outfit text-sm leading-tight font-normal text-[hsl(216,15%,48%)]">
             Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
           </p>
         </div>

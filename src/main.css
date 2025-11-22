@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500..800&display=swap');
 
 @theme {
-  --font-display: "Outfit", sans-serif; 
+  --font-outfit: "Outfit", sans-serif; 
+}
+
+@theme {
+  --font-figtree: "Figtree", sans-serif; 
 }

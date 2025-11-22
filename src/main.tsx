@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
 import QRCode from './pages/qr-code'
+import BlogPreview from './pages/blog-preview'
 import './main.css'
 
 const router = createBrowserRouter([
@@ -14,7 +15,10 @@ const router = createBrowserRouter([
     path: '/qr-code',
     element: <QRCode />
   },
-
+  {
+    path: '/blog-preview',
+    element: <BlogPreview />
+  },
 ])
 
 createRoot(document.getElementById('root')!).render(
