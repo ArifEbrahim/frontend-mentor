@@ -3,7 +3,6 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-outfit: "Outfit", sans-serif; 
-  --font-figtree: "Figtree", sans-serif; 
+  --font-outfit: 'Outfit', sans-serif;
+  --font-figtree: 'Figtree', sans-serif;
 }
-

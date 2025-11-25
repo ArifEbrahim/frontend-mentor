@@ -103,6 +103,7 @@ Comprehensive setup with multiple plugins:
 - **Vite plugin**: Uses `@vitejs/plugin-react-swc` (SWC compiler, not Babel) for faster builds
 - **Image imports**: Import images directly in components (Vite handles them)
 - **Root element**: App mounts to `#root` div in `index.html`
-- **Custom fonts**: Defined via Google Fonts in `main.css`, accessible via `font-display` class
+- **Custom fonts**: Defined via Google Fonts in `main.css`, accessible via `font-[fontName]` classes
 - **Accessibility**: JSX a11y plugin enforces accessible patterns (proper alt text, semantic HTML, ARIA usage)
 - **Commit message**: Always use Conventional Commits 
+- **Accessibility**: Ensure code meets latest Web Content Accessibility Guidelines (WCAG)
