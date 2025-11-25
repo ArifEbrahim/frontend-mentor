@@ -11,7 +11,7 @@ export default function BlogPreview() {
         <section className="text-left">
           <p className="mb-3 inline-block rounded-md bg-[hsl(47,88%,63%)] px-3 py-1 text-sm font-bold">Learning</p>
           <p className="mb-3 text-xs">Published 21 Dec 2023</p>
-          <h1 className="mb-3 text-xl font-extrabold">HTML & CSS foundations</h1>
+          <h1 className="mb-3 text-xl font-extrabold hover:text-[hsl(47,88%,63%)]">HTML & CSS foundations</h1>
           <p className="mb-3 text-sm leading-6 text-[hsl(0,0%,42%)]">
             These languages are the backbone of every website, defining structure, content and presentation
           </p>
@@ -24,3 +24,6 @@ export default function BlogPreview() {
     </main>
   )
 }
+
+// TODO: add proper box shadow
+// TODO: increase image size
