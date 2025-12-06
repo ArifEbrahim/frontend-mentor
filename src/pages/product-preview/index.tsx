@@ -1,14 +1,14 @@
-import productImage from './assets/image-product-mobile.jpg'
+import productImageMobile from './assets/image-product-mobile.jpg'
+import productImageDesktop from './assets/image-product-desktop.jpg'
 import trolleyIcon from './assets/icon-cart.svg'
 
 export default function ProductPreview() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-[hsl(30,38%,92%)]">
-      <article className="max-w-[350px] bg-white">
-        <div role="img" className="overflow-hidden rounded-lg">
-          <img src={productImage} alt="An expensive perfume" />
-        </div>
-        <div className="mx-8 my-6 font-monserrat">
+      <article className="grid max-w-[350px] grid-cols-1 overflow-hidden rounded-lg bg-white shadow-sm lg:max-w-[600px] lg:grid-cols-2">
+        <img src={productImageMobile} alt="An expensive perfume" className="lg:hidden" />
+        <img src={productImageDesktop} alt="An expensive perfume" className="hidden lg:block" />
+        <div className="m-8 flex flex-col justify-evenly font-monserrat">
           <p className="mb-4 text-xs text-[hsl(228,12%,48%)]">P E R F U M E</p>
           <p className="font-fraunces text-3xl">Gabrielle Essence</p>
           <p className="mb-4 font-fraunces text-3xl">Eau De Parfum</p>
@@ -20,7 +20,7 @@ export default function ProductPreview() {
             <p className="font-fraunces text-3xl text-[hsl(158,36%,37%)]">£149.99</p>
             <p className="text-sm text-[hsl(228,12%,48%)] line-through">£169.99</p>
           </div>
-          <button className='w-full bg-[hsl(158,36%,37%)] flex items-center justify-center gap-3 text-white p-3 rounded-lg text-sm'>
+          <button className="flex w-full items-center justify-center gap-3 rounded-lg bg-[hsl(158,36%,37%)] p-3 text-sm text-white">
             <img src={trolleyIcon} alt="Trolley icon" />
             Add to Cart
           </button>
