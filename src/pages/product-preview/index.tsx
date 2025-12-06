@@ -8,10 +8,9 @@ export default function ProductPreview() {
       <article className="grid max-w-[350px] grid-cols-1 overflow-hidden rounded-lg bg-white shadow-sm lg:max-w-[600px] lg:grid-cols-2">
         <img src={productImageMobile} alt="An expensive perfume" className="lg:hidden" />
         <img src={productImageDesktop} alt="An expensive perfume" className="hidden lg:block" />
-        <div className="m-8 flex flex-col justify-evenly font-monserrat">
-          <p className="mb-4 text-xs text-[hsl(228,12%,48%)]">P E R F U M E</p>
-          <p className="font-fraunces text-3xl">Gabrielle Essence</p>
-          <p className="mb-4 font-fraunces text-3xl">Eau De Parfum</p>
+        <div className="font-montserrat m-8 flex flex-col justify-evenly">
+          <p className="mb-4 text-xs tracking-widest text-[hsl(228,12%,48%)] uppercase">Perfume</p>
+          <h1 className="mb-4 font-fraunces text-3xl leading-tight">Gabrielle Essence Eau De Parfum</h1>
           <p className="mb-4 text-sm text-[hsl(228,12%,48%)]">
             A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of
             CHANEL.
@@ -21,7 +20,7 @@ export default function ProductPreview() {
             <p className="text-sm text-[hsl(228,12%,48%)] line-through">£169.99</p>
           </div>
           <button className="flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg bg-[hsl(158,36%,37%)] p-3 text-sm text-white hover:bg-[hsl(158,42%,18%)]">
-            <img src={trolleyIcon} alt="Trolley icon" />
+            <img src={trolleyIcon} alt="" aria-hidden="true" />
             Add to Cart
           </button>
         </div>
