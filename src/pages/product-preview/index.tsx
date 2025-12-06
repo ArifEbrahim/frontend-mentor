@@ -20,7 +20,7 @@ export default function ProductPreview() {
             <p className="font-fraunces text-3xl text-[hsl(158,36%,37%)]">£149.99</p>
             <p className="text-sm text-[hsl(228,12%,48%)] line-through">£169.99</p>
           </div>
-          <button className="flex w-full items-center justify-center gap-3 rounded-lg bg-[hsl(158,36%,37%)] p-3 text-sm text-white">
+          <button className="flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg bg-[hsl(158,36%,37%)] p-3 text-sm text-white hover:bg-[hsl(158,42%,18%)]">
             <img src={trolleyIcon} alt="Trolley icon" />
             Add to Cart
           </button>
