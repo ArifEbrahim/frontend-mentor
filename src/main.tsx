@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
 import QRCode from './pages/qr-code'
 import BlogPreview from './pages/blog-preview'
+import ProductPreview from './pages/product-preview'   
 import './main.css'
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/blog-preview',
     element: <BlogPreview />
+  },
+    {
+    path: '/product-preview',
+    element: <ProductPreview />
   },
 ])
 

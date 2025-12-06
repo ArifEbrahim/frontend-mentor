@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
 @import 'tailwindcss';
 
 @theme {
   --font-outfit: 'Outfit', sans-serif;
   --font-figtree: 'Figtree', sans-serif;
+  --font-monserrat: 'Montserrat', sans-serif;
+  --font-fraunces: 'Fraunces', serif;
 }
