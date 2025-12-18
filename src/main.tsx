@@ -4,7 +4,8 @@ import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
 import QRCode from './pages/qr-code'
 import BlogPreview from './pages/blog-preview'
-import ProductPreview from './pages/product-preview'   
+import ProductPreview from './pages/product-preview'
+import NFTPreview from './pages/nft-preview'
 import './main.css'
 
 const router = createBrowserRouter([
@@ -20,10 +21,14 @@ const router = createBrowserRouter([
     path: '/blog-preview',
     element: <BlogPreview />
   },
-    {
+  {
     path: '/product-preview',
     element: <ProductPreview />
   },
+  {
+    path: '/nft-preview',
+    element: <NFTPreview />
+  }
 ])
 
 createRoot(document.getElementById('root')!).render(
