@@ -6,6 +6,7 @@ import QRCode from './pages/qr-code'
 import BlogPreview from './pages/blog-preview'
 import ProductPreview from './pages/product-preview'
 import NFTPreview from './pages/nft-preview'
+import OrderSummary from './pages/order-summary'
 import './main.css'
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/nft-preview',
     element: <NFTPreview />
+  },
+  {
+    path: '/order-summary',
+    element: <OrderSummary />
   }
 ])
 
