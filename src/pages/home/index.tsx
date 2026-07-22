@@ -1,12 +1,5 @@
 import { Link } from 'react-router'
-
-const challenges = [
-  { path: '/qr-code', name: 'QR Code Component' },
-  { path: '/blog-preview', name: 'Blog Preview Card' },
-  { path: '/product-preview', name: 'Product Preview Card' },
-  { path: '/nft-preview', name: 'NFT Preview Card' },
-  { path: '/order-summary', name: 'Order Summary Card' }
-]
+import { routes } from '../../routes'
 
 export default function Home() {
   return (
@@ -14,7 +7,7 @@ export default function Home() {
       <h1 className="mb-8 text-center font-outfit text-3xl font-bold text-gray-800">Frontend Mentor Solutions</h1>
       <nav aria-label="Challenge solutions">
         <ul className="flex w-full max-w-sm flex-col gap-4">
-          {challenges.map(challenge => (
+          {routes.map(challenge => (
             <li key={challenge.path}>
               <Link
                 to={challenge.path}
