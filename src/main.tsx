@@ -2,38 +2,16 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
-import QRCode from './pages/qr-code'
-import BlogPreview from './pages/blog-preview'
-import ProductPreview from './pages/product-preview'
-import NFTPreview from './pages/nft-preview'
-import OrderSummary from './pages/order-summary'
+import Home from './pages/home'
+import { routes } from './routes'
 import './main.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <h1 className="text-center text-gray-400">welcome</h1>
+    element: <Home />
   },
-  {
-    path: '/qr-code',
-    element: <QRCode />
-  },
-  {
-    path: '/blog-preview',
-    element: <BlogPreview />
-  },
-  {
-    path: '/product-preview',
-    element: <ProductPreview />
-  },
-  {
-    path: '/nft-preview',
-    element: <NFTPreview />
-  },
-  {
-    path: '/order-summary',
-    element: <OrderSummary />
-  }
+  ...routes
 ])
 
 createRoot(document.getElementById('root')!).render(
