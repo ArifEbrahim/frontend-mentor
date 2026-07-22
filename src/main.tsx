@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
+import Home from './pages/home'
 import QRCode from './pages/qr-code'
 import BlogPreview from './pages/blog-preview'
 import ProductPreview from './pages/product-preview'
@@ -12,7 +13,7 @@ import './main.css'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <h1 className="text-center text-gray-400">welcome</h1>
+    element: <Home />
   },
   {
     path: '/qr-code',
