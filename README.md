@@ -11,11 +11,7 @@ This project is a portfolio of solutions to Frontend Mentor challenges, built as
 ## Usage
 1. Install dependencies: `pnpm install`
 2. Start dev server: `pnpm dev`
-3. Build for production: `pnpm build`
-4. Lint code: `pnpm lint`
-
-## Structure
-- All challenges are in `src/pages/[challenge-name]/`
+3. Navigate to `http://localhost:5173/`
 
 ## License
 MIT
