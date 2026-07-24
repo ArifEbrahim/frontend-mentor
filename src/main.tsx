@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     }
   ],
   {
-    basename: '/frontend-mentor/'
+    basename: import.meta.env.BASE_URL
   }
 )
 
