@@ -7,17 +7,22 @@ import NotFound from './pages/not-found'
 import { routes } from './routes'
 import './main.css'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Home />
+    },
+    ...routes,
+    {
+      path: '*',
+      element: <NotFound />
+    }
+  ],
   {
-    path: '/',
-    element: <Home />
-  },
-  ...routes,
-  {
-    path: '*',
-    element: <NotFound />
+    basename: import.meta.env.BASE_URL
   }
-])
+)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
